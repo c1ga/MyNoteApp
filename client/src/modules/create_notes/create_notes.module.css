@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.CreateFormContainer {
+  grid-area: 1/3/2/-1;
+  width: 100%;
+  height: 100%;
+  background-color: #ecd7b9;
+  box-shadow: 0 1px 3px black;
+  transition: all 0.2s linear;
+  z-index: 50;
+  display: grid;
+  grid-template-columns: 95%;
+  grid-template-rows: 5% 93%;
+  justify-content: center;
+  gap: 2%;
+}
+.CreateFormContainer h3 {
+  grid-area: 1/1/2/-1;
+  width: 100%;
+  height: fit-content;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #715834;
+}
+.CreateFormContainer .formContainer {
+  grid-area: 2/1/3/-1;
+  width: 100%;
+  height: 100%;
+  justify-self: center;
+  align-self: center;
+  border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 33%);
+  grid-template-rows: auto;
+  gap: 20px 1%;
+  justify-content: center;
+  align-content: center;
+}
+.CreateFormContainer .formContainer section {
+  grid-area: auto;
+  width: 50%;
+  height: auto;
+  justify-self: center;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto;
+  gap: 5px 0;
+}
+.CreateFormContainer .formContainer section label {
+  grid-area: auto;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: #715834;
+}
+.CreateFormContainer .formContainer section input {
+  grid-area: auto;
+  width: 100%;
+  height: 30px;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4941176471);
+  border-radius: 5px;
+  box-shadow: inset 0 0 3px rgba(72, 53, 29, 0.7137254902), inset 0 0 5px rgba(72, 53, 29, 0.7333333333);
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #957851;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 5px 5px;
+}
+.CreateFormContainer .formContainer .description {
+  grid-column: 1/-1;
+  grid-row: auto;
+  width: 100%;
+  box-shadow: 0 0 3px rgba(72, 53, 29, 0.6156862745), 0 0 5px rgba(72, 53, 29, 0.6549019608);
+}
+.CreateFormContainer .formContainer .description textarea {
+  grid-area: auto;
+  width: 100%;
+  height: 600px;
+  padding: 20px 20px;
+  border-radius: 0px;
+  text-align: start;
+  outline: none;
+  background-color: rgba(255, 255, 255, 0.4941176471);
+  border-radius: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #957851;
+  font-size: 1rem;
+  font-weight: 700;
+}
+.CreateFormContainer .formContainer .warningField {
+  box-shadow: 0 0 3px rgba(255, 0, 0, 0.9254901961), 0 0 10px rgba(255, 0, 0, 0.9254901961);
+}
+.CreateFormContainer .formContainer .sbmtBtn {
+  grid-column: 1/-1;
+  grid-row: auto;
+  width: fit-content;
+  height: fit-content;
+  justify-self: center;
+  padding: 5px 55px;
+  border: 1px solid rgba(72, 53, 29, 0.8666666667);
+  box-shadow: 0 0px 3px rgba(72, 53, 29, 0.8431372549);
+  background-color: rgba(255, 255, 255, 0.3411764706);
+  color: #715834;
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 800;
+  border-radius: 50px;
+  margin-top: 10px;
+  transition: all 0.2s 0s linear;
+  cursor: pointer;
+}
+.CreateFormContainer .formContainer .sbmtBtn:hover {
+  background-color: #959595;
+  color: #ffd190;
+  box-shadow: 0 0px 3px rgba(72, 53, 29, 0.8431372549);
+}
+.CreateFormContainer .formContainer .smbMsg {
+  grid-row: auto;
+  grid-column: 1/-1;
+  width: 90%;
+  height: auto;
+  justify-self: center;
+  text-align: center;
+  word-wrap: break-word;
+  font-family: rgb(149, 139, 115);
+  font-size: 1.2rem;
+  color: #00b15c;
+}
+
+.NoteOnView {
+  transform: translateX(110%);
+}

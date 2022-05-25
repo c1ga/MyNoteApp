@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.leftContainer {
+  grid-area: 1/1/2/2;
+  width: 100%;
+  height: auto;
+  background-color: #f0dfc8;
+  z-index: 100;
+  display: grid;
+  grid-template-columns: 95%;
+  grid-template-rows: auto;
+  align-content: start;
+  justify-content: center;
+  gap: 0;
+}
+.leftContainer .titleMyNote {
+  grid-area: auto;
+  width: 100%;
+  height: fit-content;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #5c472a;
+  text-align: center;
+  padding: 10px 0;
+}
